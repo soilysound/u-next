@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Unredacted</title>
+
+    <script type="module">
+        document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/print.css" media="print">
+
+    <meta name="description" content="Page description">
+    <meta property="og:title" content="Unique page title - My Site">
+    <meta property="og:description" content="Page description">
+    <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
+    <meta property="og:image:alt" content="Image description">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://www.mywebsite.com/page">
+    <link rel="canonical" href="https://www.mywebsite.com/page">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/u.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="unredacted.manifest">
+    <meta name="theme-color" content="#111111">
+</head>
+
+<body style>
+    <div class="flex gap-xxl flex-1">
+        <header class="header wrap wrap-padding flex gap-m" role="banner">
+            <nav class="nav flex gap-s">
+                <button aria-hidden="true" class="nav-button" data-role="nav-toggle" aria-controls="nav" aria-expanded="false">
+									<span class="sr-only">Navigation</span>
+									<svg viewBox="0 0 100 100" class="u-logo" aria-hidden="true">
+									<path d="m0 0h100v100h-100z" class="u-logo-bg"/>
+									<path d="m18.76 6.721c0.01113 18.08-0.03846 36.15 0.03965 54.23 0.2167 6.581 1.039 13.35 4.146 19.26 2.934 5.477 8.072 9.702 13.99 11.59 6.192 2.091 12.87 2.293 19.32 1.568 6.124-0.7649 12.28-3.081 16.65-7.557 3.883-3.885 6.19-9.102 7.188-14.45 1.584-7.781 1.045-15.76 1.142-23.65v-41.47h-18.54c-0.0095 18.09 0.03596 36.18-0.0414 54.26-0.09266 3.041-0.3576 6.304-1.38 9.069-0.9121 2.865-3.242 5.275-6.172 6.072-2.136 0.674-4.539 0.805-6.669 0.6284-2.76-0.1379-5.608-1.019-7.566-3.048-1.586-1.651-2.357-3.961-2.855-6.086-0.9567-4.678-0.6237-9.467-0.7146-14.22-0.01102-15.56 3.48e-4 -31.11-5e-3 -46.67h-18.54v0.4701z" class="u-logo-fg"/>
+									</svg>
+								</button>
+
+                <div class="nav-body" data-role="nav-body">
+                    <ul class="nav-links grid gap-m" id="nav">
+                        <li><a href="/" itemprop="url" class="nav__body-link">Home</a></li>
+                        <li><a href="/conspiracies/" itemprop="url" class="nav__body-link">Conspiracies</a></li>
+                        <li><a href="/unsolved-murders/" itemprop="url" class="nav__body-link">Unsolved Murders</a></li>
+                        <li><a href="/assassinations/" itemprop="url" class="nav__body-link">Assassinations</a></li>
+                        <li><a href="/paranormal/" itemprop="url" class="nav__body-link">Paranormal</a></li>
+                        <li><a href="/the-unexplained/" itemprop="url" class="nav__body-link">Unexplained</a></li>
+                        <li><a href="/aliens/" itemprop="url" class="nav__body-link">Aliens</a></li>
+                        <li><a href="/cryptozoology/" itemprop="url" class="nav__body-link">Cryptozoology</a></li>
+                        <li><a href="/ancient-mysteries/" itemprop="url" class="nav__body-link">Ancient Mysteries</a></li>
+                        <li><a href="/weird/" itemprop="url" class="nav__body-link">Weird</a></li>
+                    </ul>
+                    <button class="nav-close icon" data-role="nav-toggle" aria-controls="nav" aria-expanded="false"><span class="sr-only">Navigation</span></button>
+                </div>
+            </nav>
+        </header>
+        <div class="article-top flex gap-xl">
+
+            <div class="article-head flex gap-s wrap wrap-padding">
+                <h1 class="display-1 flex gap-s"> <strong>{{headline}}:</strong><span>{{{subheadline}}}</span></h1>
+                <p class="display-3">{{snippet}}
+                </p>
+                <div class="article-byline flex flex-row gap-xs">
+<div class="article-byline-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43" fill="white"><path d="M39.561 33.971l-.145.174c-4.774 5.728-11.133 8.884-17.902 8.884-6.77 0-13.128-3.155-17.903-8.884l-.144-.174.034-.223c.922-6.014 4.064-10.845 8.847-13.606l.34-.196.271.284c2.259 2.37 5.297 3.674 8.554 3.674s6.295-1.305 8.554-3.674l.271-.284.34.196c4.783 2.761 7.925 7.592 8.848 13.606l.035.223zM21.514 21.489c5.924 0 10.744-4.82 10.744-10.744C32.258 4.821 27.438 0 21.514 0S10.77 4.821 10.77 10.744s4.82 10.745 10.744 10.745z"/></svg></div><strong>{{author}}</strong> {{formatteddate}}</div>
+            </div>
+        </div>
+
+        <article class="article-body wrap wrap-narrow wrap-padding flex gap-l" role="article">
+					{{{body}}}
+				</article>
+        <div class="flex gap-xl tile-panel">
+            <h2 class="section-header">Related stories</h1>
+                <div class="grid grid-2 gap-m wrap wrap-narrow wrap-padding">
+
+									{{#each related}}
+ 										<article class="tile tile-small" data-scale>
+                        <figure><img width="400" height="400" aria-hidden="true" loading="lazy" src="/img/stories/{{tile}}.webp">
+                            <figcaption>
+                                <h3><a href="/{{tile}}" class="flex gap-xs"><strong>{{headline}}</strong> <span>{{{tileheadline}}}</span></a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+									{{/each}}
+
+                </div>
+        </div>
+
+        <footer class="footer flex gap-xl" role="contentinfo">
+            <p class="flex gap-xs">
+                <svg viewBox="0 0 100 100" class="u-logo u-logo-flat">
+								<path d="m0 0h100v100h-100z" class="u-logo-bg"/>
+								<path d="m18.76 6.721c0.01113 18.08-0.03846 36.15 0.03965 54.23 0.2167 6.581 1.039 13.35 4.146 19.26 2.934 5.477 8.072 9.702 13.99 11.59 6.192 2.091 12.87 2.293 19.32 1.568 6.124-0.7649 12.28-3.081 16.65-7.557 3.883-3.885 6.19-9.102 7.188-14.45 1.584-7.781 1.045-15.76 1.142-23.65v-41.47h-18.54c-0.0095 18.09 0.03596 36.18-0.0414 54.26-0.09266 3.041-0.3576 6.304-1.38 9.069-0.9121 2.865-3.242 5.275-6.172 6.072-2.136 0.674-4.539 0.805-6.669 0.6284-2.76-0.1379-5.608-1.019-7.566-3.048-1.586-1.651-2.357-3.961-2.855-6.086-0.9567-4.678-0.6237-9.467-0.7146-14.22-0.01102-15.56 3.48e-4 -31.11-5e-3 -46.67h-18.54v0.4701z" class="u-logo-fg"/>
+							</svg>
+                <span>theunredacted.com</span></p>
+        </footer>
+    </div>
+    <script src="/js/script.js" type="module"></script>
+		<div class="progress"></div>
+		<a href="#" class="top">top</a>
+</body>
+
+</html>
