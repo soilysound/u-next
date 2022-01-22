@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import '../public/css/styles.css';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -6,7 +7,7 @@ function MyApp({ Component, pageProps }) {
 			<Head>
 				<title>Unredacted</title>
 				<link rel="icon" href="/favicon.ico" />
-				<link rel="stylesheet" href="/css/styles.css" />
+				{/* <link rel="stylesheet" href="/css/styles.css" /> */}
 			</Head>
 				<div className="wrap wrap-gutter flex-grid" style={{'--basis': '100%'}}>
 					<header>header</header>
