@@ -7,10 +7,11 @@
 }
 
 .wrap {
+    --wrap-width: var(--site-width);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--site-width);
+    max-width: var(--wrap-width);
 }
 
 .wrap-gutter {

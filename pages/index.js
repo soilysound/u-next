@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home({stories}) {
 	const storylist = stories.map(story => (
-    <div key={story.title}><Link href={story.path}><a>{story.title}</a></Link></div>
+    <div className="display-200" key={story.title}><Link href={story.path}><a>{story.title}</a></Link></div>
   ));
 
   return (

@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 				<div className="wrap wrap-gutter flex-grid" style={{'--basis': '100%'}}>
 					<header>header</header>
-					<main>
+					<main className="flex-grid" style={{"--basis": "100%"}}>
 								<Component {...pageProps} />
 					</main>
 					<footer>

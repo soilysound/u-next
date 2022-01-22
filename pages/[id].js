@@ -10,12 +10,14 @@ export default function Article(props) {
         <title>{story.title}</title>
       </Head>
 			<Link href="/"><a href="">back</a></Link>
-			<h1 className="title">
-				<div>{story.headline}</div>
-				<div dangerouslySetInnerHTML={{__html: story.subheadline}} />
-			</h1>
-			<h2>{story.snippet}</h2>
-			<div dangerouslySetInnerHTML={{__html: story.body}} />
+			<div className="flex-grid article-head">
+				<h1>
+					<div className="display-200">{story.headline}</div>
+					<div className="display-800" dangerouslySetInnerHTML={{__html: story.subheadline}} />
+				</h1>
+				<p className="display-300">{story.snippet}</p>
+			</div>
+			<div className="flex-grid article-body" style={{"--basis": "100%"}} dangerouslySetInnerHTML={{__html: story.body}} />
 		</>
   )
 }
