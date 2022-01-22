@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home({stories}) {
 	const storylist = stories.map(story => (
-    <div><Link href={story.path}><a>{story.title} - {story.subtitle}</a></Link></div>
+    <div key={story.title}><Link href={story.path}><a>{story.title}</a></Link></div>
   ));
 
   return (
@@ -14,7 +14,16 @@ export default function Home({stories}) {
 }
 
 export async function getStaticProps() {
-	const stories = require('../stories.json');
+	const all = require('../stories.json');
+	const stories = all.map((s) => {
+		return {
+			path: s.path,
+			title: s.title,
+			headline: s.headline,
+			subheadline: s.subheadline
+			}
+	})
+
 	return { props: { stories } }
 }
 
