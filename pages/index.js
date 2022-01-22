@@ -5,8 +5,8 @@ const stories = require('../stories.json');
 
 export default function Home() {
 
-	const storylist = stories.stories.map(story => (
-    <div><Link href={story.urlroot}><a>{story.title} - {story.subtitle}</a></Link></div>
+	const storylist = stories.map(story => (
+    <div><Link href={story.path}><a>{story.title} - {story.subtitle}</a></Link></div>
   ));
 
   return (
