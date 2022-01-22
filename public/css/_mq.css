@@ -1,0 +1,17 @@
+@custom-media --reduce-motion (prefers-reduced-motion: reduce);
+@custom-media --reduce-data (prefers-reduced-data: reduce);
+@custom-media --dark (prefers-color-scheme: dark);
+@custom-media --light (prefers-color-scheme: light);
+@custom-media --touch (hover: none) and (pointer: coarse);
+@custom-media --stylus (hover: none) and (pointer: fine);
+@custom-media --pointer (hover) and (pointer: coarse);
+@custom-media --mouse (hover) and (pointer: fine);
+
+/* sizes */
+
+@custom-media --x-small (max-width: 320px);
+@custom-media --small (min-width: 320px) and (max-width: 480px);
+@custom-media --medium (min-width: 480px) and (max-width: 767px);
+@custom-media --large (min-width: 767px) and (max-width: 1024px);
+@custom-media --x-large (min-width: 1024px) and (max-width: 1200px);
+@custom-media --xx-large (min-width: 1200px);

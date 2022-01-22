@@ -1,0 +1,23 @@
+:root {
+    /* shades */
+    --shade-100: hsl(0, 0%, 100%);
+    --shade-200: hsl(0, 0%, 87.5%);
+    --shade-300: hsl(0, 0%, 75%);
+    --shade-400: hsl(0, 0%, 62.5%);
+    --shade-500: hsl(0, 0%, 50%);
+    --shade-600: hsl(0, 0%, 37.5%);
+    --shade-700: hsl(0, 0%, 25%);
+    --shade-800: hsl(0, 0%, 12.5%);
+    --shade-900: hsl(0, 0%, 0%);
+    /* utility */
+    --warning: orange;
+    --alert: red;
+    --breaking: yellow;
+    --breaking-text: black;
+    --success: green;
+    --link-color: rgb(43, 80, 202);
+    /* opacity */
+    --black-op-75: hsla(0, 0, 0, 70%);
+    --black-op-50: hsla(0, 0, 0, 50%);
+    --black-op-25: hsla(0, 0, 0, 25%);
+}

@@ -1,0 +1,100 @@
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+    margin: 0;
+}
+
+
+/* Set core root defaults */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+}
+
+
+/* Make images easier to work with */
+
+img,
+svg {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a,
+.underline {
+    color: inherit;
+    text-decoration-line: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Remove all animations and transitions for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        /* animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important; */
+        scroll-behavior: auto !important;
+    }
+}

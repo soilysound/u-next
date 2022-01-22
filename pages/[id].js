@@ -7,17 +7,16 @@ export default function Article() {
 	const { id } = router.query;
 
   return (
-    <div className="container">
+    <>
       <Head>
         <title>{id}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      
         <h1 className="title">
           {id}
         </h1>
-			</main>
-	</div>
+			
+	</>
   )
 }

@@ -1,0 +1,7 @@
+:root {
+    --layer-below: -1;
+    --layer-base: 0;
+    --layer-ui: 9;
+    --layer-overlay: 99;
+    --layer-top: 99999999999999999999999999;
+}

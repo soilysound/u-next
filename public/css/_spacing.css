@@ -1,0 +1,51 @@
+:root {
+    --gap-0: 0;
+    --gap-100: clamp(0.5rem, 0.5rem + (12 - 8) * ((100vw - 400px) / (1000 - 400)), 0.75rem);
+    --gap-200: 12 - 18px;
+    --gap-300: 18 - 24px;
+    --gap-400: 24 - 30px;
+    --gap-500: 30 - 38px;
+    --gap-600: 38 - 50px;
+    --gap-700: 50 - 62px;
+    --gap-800: 62 - 80px;
+    --gap-fixed-xs: 4px;
+    --gap-fixed-s: 8px;
+    --gap-fixed-m: 12px;
+    --gap-fixed-l: 18px;
+    /* aliases */
+    --site-gutter: var(--gap-300);
+    --component-gap-tight: var(--gap-100);
+    --component-gap: var(--gap-200);
+    --component-gap-loose: var(--gap-300);
+    --component-padding-tight: var(--gap-200);
+    --component-padding: var(--gap-300);
+    --component-padding-loose: var(--gap-400);
+    --component-margin-tight: var(--gap-300);
+    --component-margin: var(--gap-400);
+    --component-margin-lose: var(--gap-500);
+    --group-margin-tight: var(--gap-600);
+    --group-margin: var(--gap-700);
+    --group-margin-loose: var(--gap-800);
+}
+
+
+/* utility classes */
+
+.component-gap {
+    --component-gap-value: var(--component-gap);
+    gap: var(--component-gap-value);
+}
+
+.component-padding {
+    --component-padding-value: var(--component-padding);
+    padding: var(--component-padding-value);
+}
+
+.component-margin {
+    margin: 0;
+}
+
+.group-margin {
+    --group-margin-value: var(--group-margin);
+    margin-bottom: var(--group-margin-value);
+}
