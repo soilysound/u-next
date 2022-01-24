@@ -4,7 +4,7 @@
     --image-width: 100%;
     --padding: var(--component-padding);
     background: var(--component-canvas);
-    box-shadow: var(--shadow-glow);
+    outline: 3px solid var(--border-color-dark-mode);
     position: relative;
     line-height: 1;
     container: inline-size;

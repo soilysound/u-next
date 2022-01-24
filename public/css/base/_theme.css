@@ -11,7 +11,7 @@
     --component-shade-dark: var(--shade-900);
     --border-color: var(--shade-300);
     --border-color-strong: var(--shade-700);
-    --border-color-dark-mode: 3px solid hsla(0, 100%, 100%, 0);
+    --border-color-dark-mode: hsla(0, 100%, 100%, 0);
     /* brand colors */
     --brand-primary: #d80000;
     --brand-secondary: black;
@@ -33,6 +33,6 @@
         --component-shade-dark: var(--shade-800);
         --border-color: var(--shade-500);
         --border-color-strong: var(--shade-200);
-        --border-color-dark-mode: 3px solid var(--component-shade);
+        --border-color-dark-mode: var(--component-shade);
     }
 }
