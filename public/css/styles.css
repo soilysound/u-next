@@ -1,4 +1,6 @@
 @import url("./base/core.css");
+@import url("./layouts/article-layout.css");
+@import url("./layouts/article-list-layout.css");
 @import url("./components/header.css");
 @import url("./components/nav.css");
 @import url("./components/article-head.css");

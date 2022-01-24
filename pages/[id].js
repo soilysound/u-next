@@ -1,20 +1,15 @@
+import ArticleLayout from 'layouts/article-layout';
 import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 
 export default function Article(props) {
 	const story = props.story[0];
-
-	useEffect(() => {
-		document.body.className = "page-canvas";
-	});
 
 	return (
 		<>
 			<Head>
 				<title>{story.title} - The Unredacted</title>
 			</Head>
+
 			<div className="wrap" style={{ "--wrap-gap": "var(--gap-400)", "--wrap-width": "var(--site-width-m)" }} >
 				<div className="wrap article-head" style={{ "--wrap-gap": "var(--gap-200)" }}>
 					<h1 className="wrap" style={{ "--wrap-gap": "6px" }}>
@@ -31,6 +26,15 @@ export default function Article(props) {
 			</div>
 		</>
 	)
+}
+
+// Article.layout is defined a function that takes a page arg and returns a layout with that page as content
+Article.layout = (page) => {
+  return (
+    <ArticleLayout>
+      {page}
+    </ArticleLayout>
+  )
 }
 
 export async function getStaticPaths() {
