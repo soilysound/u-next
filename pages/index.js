@@ -9,7 +9,7 @@ export default function Home({stories}) {
 	});
 
 	const storylist = stories.map(story => (
-    <Tile story={story}/>
+    <Tile story={story} key={story.title} />
   ));
 
   return (
