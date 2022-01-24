@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Tile from '../components/tile';
-import ArticleListLayout from 'layouts/article-list-layout';
 
 export default function Home({ stories }) {
 	const storylist = stories.map((story, index) => (
@@ -19,13 +18,6 @@ export default function Home({ stories }) {
 	)
 }
 
-Home.layout = (page) => {
-	return (
-		<ArticleListLayout>
-			{page}
-		</ArticleListLayout>
-	)
-}
 Home.background = 'light'
 
 export async function getStaticProps() {
