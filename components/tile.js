@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 export default function Tile({ story }) {
-	console.log(story);
 	return (
 		<article className="tile">
 			<figure className="flex-grid" style={{ "--gap": "0px" }}>

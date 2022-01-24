@@ -1,8 +1,13 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import '../public/css/styles.css';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
+
+	useEffect(() => {
+		document.documentElement.classList.add("js");
+	});
 
 	return (
 		<>

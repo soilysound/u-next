@@ -5,8 +5,9 @@ import { useEffect } from 'react';
 
 export default function Article(props) {
 	const story = props.story[0];
+
 	useEffect(() => {
-		document.body.className = "page-article";
+		document.body.className = "page-canvas";
 	});
 
 	return (
@@ -47,5 +48,5 @@ export async function getStaticProps({ params }) {
 		return s.path === params.id;
 	});
 
-	return { props: { story } }
+	return { props: { story, bodyClass: 'page-canvas' } }
 }

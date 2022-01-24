@@ -6,11 +6,12 @@
     position: relative;
 }
 
-.nav-body {
+.js .nav-body {
     display: none;
 }
 
 .nav-button {
+    contain: content;
     flex-basis: auto;
     --size: clamp(62px, 15vw, 84px);
     position: relative;

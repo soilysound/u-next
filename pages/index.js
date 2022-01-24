@@ -4,8 +4,9 @@ import Tile from '../components/tile';
 import { useEffect } from 'react';
 
 export default function Home({ stories }) {
+
 	useEffect(() => {
-		document.body.className = "page-article-shade";
+		document.body.className = "page-canvas-shade";
 	});
 
 	const storylist = stories.map((story, index) => (

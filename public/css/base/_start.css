@@ -6,11 +6,11 @@ html {
 }
 
 body,
-.page-article-shade {
+.page-canvas-shade {
     background: var(--page-canvas-shade);
 }
 
-.page-article {
+.page-canvas {
     background: var(--page-canvas);
 }
 
