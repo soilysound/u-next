@@ -1,0 +1,8 @@
+.article-head-title {
+    color: var(--brand-primary)
+}
+
+.article-head-snippet {
+    max-width: 600px;
+    color: var(--text-color-secondary)
+}

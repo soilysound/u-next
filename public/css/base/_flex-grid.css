@@ -1,6 +1,6 @@
 .flex-grid {
-    --gap: 1em;
     --basis: auto;
+    --gap: var(--component-gap);
     --wrap: wrap;
     --grow: 1;
     --collapse: 0;
@@ -20,17 +20,6 @@
     min-width: clamp( var(--min-width, 0px), (var(--collapse) - 100%) * 999, 100% - var(--gap));
 }
 
-
-/* utilities */
-
-.align-start {
-    align-items: flex-start;
-}
-
-.align-end {
-    align-items: flex-end;
-}
-
-.align-center {
-    align-items: center;
+.flex-grid>*:only-child {
+    flex-basis: var(--basis);
 }

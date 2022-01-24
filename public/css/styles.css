@@ -1,9 +1,5 @@
-@import url("./_reset.css");
-@import url("./_spacing.css");
-@import url("./_colors.css");
-@import url("./_fonts.css");
-@import url("./_start.css");
-@import url("./_layers.css");
-@import url("./_layout.css");
-@import url("./_flex-grid.css");
-@import url("./_theme.css");
+@import url("./base/core.css");
+@import url("./components/header.css");
+@import url("./components/nav.css");
+@import url("./components/article-head.css");
+@import url("./components/article-body.css");

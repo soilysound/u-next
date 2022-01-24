@@ -15,7 +15,7 @@
     --breaking: yellow;
     --breaking-text: black;
     --success: green;
-    --link-color: rgb(43, 80, 202);
+    --link-color: var(--brand-primary);
     /* opacity */
     --black-op-75: hsla(0, 0, 0, 70%);
     --black-op-50: hsla(0, 0, 0, 50%);

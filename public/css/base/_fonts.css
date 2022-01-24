@@ -1,13 +1,21 @@
+@font-face {
+    font-family: 'SkyText';
+    src: url();
+    font-weight: normal;
+    font-display: swap;
+}
+
 :root {
     /* scaling font sizes */
-    --font-scale-100: clamp(1rem, 1rem + (18 - 16) * ((100vw - 400px) / (1000 - 400)), 1rem + 2px);
-    --font-scale-200: clamp(1rem + 2px, 1rem + 2px + (20 - 18) * ((100vw - 400px) / (1000 - 400)), 1rem + 4px);
-    --font-scale-300: clamp(1rem + 6px, 1rem + 6px + (24 - 22) * ((100vw - 400px) / (1000 - 400)), 1rem + 8px);
+    --font-scale-100: clamp(1rem, 1rem + (18 - 16) * ((100vw - 400px) / (1000 - 400)), 1.125rem);
+    --font-scale-200: clamp(1.125rem, 1.125rem + (20 - 18) * ((100vw - 400px) / (1000 - 400)), 1.25rem);
+    --font-scale-300: clamp(1.375rem, 1.375rem + (24 - 22) * ((100vw - 400px) / (1000 - 400)), 1.5rem);
     --font-scale-400: clamp(1.625rem, 1.625rem + (30 - 26) * ((100vw - 400px) / (1000 - 400)), 1.875rem);
     --font-scale-500: clamp(2rem, 2rem + (38 - 32) * ((100vw - 400px) / (1000 - 400)), 2.375rem);
     --font-scale-600: clamp(2.5rem, 2.5rem + (48 - 40) * ((100vw - 400px) / (1000 - 400)), 3rem);
     --font-scale-700: clamp(3rem, 3rem + (56 - 48) * ((100vw - 400px) / (1000 - 400)), 3.5rem);
     --font-scale-800: clamp(3.5rem, 3.5rem + (64 - 56) * ((100vw - 400px) / (1000 - 400)), 4rem);
+    --font-scale-900: clamp(3.5rem, 3.5rem + (80 - 56) * ((100vw - 400px) / (1000 - 400)), 5rem);
     /* fixed */
     --base-font-size: 1rem;
     --font-fixed-xs: calc(1rem - 2px);
@@ -17,6 +25,7 @@
     --supporting-text: var(--font-fixed-s);
     --component-text: var(--font-scale-100);
     --article-text: var(--font-scale-200);
+    --display-100: var(--font-scale-100);
     --display-200: var(--font-scale-200);
     --display-300: var(--font-scale-300);
     --display-400: var(--font-scale-400);
@@ -24,6 +33,7 @@
     --display-600: var(--font-scale-600);
     --display-700: var(--font-scale-700);
     --display-800: var(--font-scale-800);
+    --display-900: var(--font-scale-900);
     --line-height-100: 1.4;
     --line-height-200: 1.4;
     --line-height-300: 1.35;
@@ -32,6 +42,7 @@
     --line-height-600: 1.15;
     --line-height-700: 1.05;
     --line-height-800: 1;
+    --line-height-900: 0.92;
 }
 
 
@@ -51,6 +62,10 @@
 
 .article-text {
     font-size: var(--article-text);
+}
+
+.display-100 {
+    font-size: var(--display-100);
 }
 
 .display-200 {
@@ -85,4 +100,9 @@
 .display-800 {
     font-size: var(--display-800);
     line-height: var(--line-height-800);
+}
+
+.display-900 {
+    font-size: var(--display-900);
+    line-height: var(--line-height-900);
 }

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './components/header';
 import '../public/css/styles.css';
 
 function MyApp({ Component, pageProps }) {
@@ -7,13 +8,12 @@ function MyApp({ Component, pageProps }) {
 			<Head>
 				<title>Unredacted</title>
 				<link rel="icon" href="/favicon.ico" />
-				{/* <link rel="stylesheet" href="/css/styles.css" /> */}
 			</Head>
-				<div className="wrap wrap-gutter flex-grid" style={{'--basis': '100%'}}>
-					<header>header</header>
-					<main className="flex-grid" style={{"--basis": "100%"}}>
-								<Component {...pageProps} />
-					</main>
+				<div className="wrap wrap-site-width wrap-gutter">
+					<Header />
+				
+					<Component {...pageProps} />
+					
 					<footer>
 						footer
 					</footer>

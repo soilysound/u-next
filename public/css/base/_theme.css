@@ -1,17 +1,18 @@
 :root {
     /* general colors */
-    --text-primary: var(--shade-900);
-    --text-secondary: var(--shade-700);
-    --text-tertiary: var(--shade-700);
+    --text-color: var(--shade-800);
+    --text-color-light: var(--shade-100);
+    --text-color-secondary: var(--shade-600);
     --page-canvas: var(--shade-100);
     --page-canvas-shade: var(--shade-200);
     --component-canvas: var(--shade-100);
     --component-shade: var(--shade-300);
+    --component-shade-dark: var(--shade-900);
     --border-color: var(--shade-300);
     --border-color-strong: var(--shade-700);
     /* brand colors */
-    --brand-primary: red;
-    --brand-secondry: blue;
+    --brand-primary: #d80000;
+    --brand-secondary: black;
     --brand-highlight: lightblue;
     /* brand fonts */
     --brand-font: 'Sky Text';
@@ -20,14 +21,15 @@
 @media (prefers-color-scheme: dark) {
      :root {
         color-scheme: dark;
-        --text-primary: var(--shade-100);
-        --text-secondary: var(--shade-200);
-        --text-tertiary: var(--shade-300);
+        --text-color: var(--shade-200);
+        --text-color-secondary: var(--shade-400);
         --page-canvas: var(--shade-900);
         --page-canvas-shade: var(--shade-800);
         --component-canvas: var(--shade-900);
         --component-shade: var(--shade-700);
+        --component-shade-dark: var(--shade-800);
         --border-color: var(--shade-500);
         --border-color-strong: var(--shade-200);
+        --brand-secondary: var(--shade-800);
     }
 }

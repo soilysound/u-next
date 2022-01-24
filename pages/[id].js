@@ -9,42 +9,34 @@ export default function Article(props) {
       <Head>
         <title>{story.title}</title>
       </Head>
-			<Link href="/"><a href="">back</a></Link>
-			<div className="flex-grid article-head">
-				<h1>
-					<div className="display-200">{story.headline}</div>
-					<div className="display-800" dangerouslySetInnerHTML={{__html: story.subheadline}} />
-				</h1>
-				<p className="display-300">{story.snippet}</p>
+			<div className="wrap" style={{"--wrap-gap": "var(--gap-400)", "--wrap-width": "770px"}} >
+				<div className="wrap article-head" style={{"--wrap-gap": "var(--gap-200)"}}>
+					<h1 className="wrap" style={{"--wrap-gap": "6px"}}>
+						<div className="article-head-title display-200">{story.headline}</div>
+						<div className="display-900" dangerouslySetInnerHTML={{__html: story.subheadline}} />
+					</h1>
+					<p className="article-head-snippet display-300">{story.snippet}</p>
+				</div>
+				<div className="wrap article-body article-text" style={{"--wrap-gap": "var(--gap-400)"}} dangerouslySetInnerHTML={{__html: story.body}} />
 			</div>
-			<div className="flex-grid article-body" style={{"--basis": "100%"}} dangerouslySetInnerHTML={{__html: story.body}} />
 		</>
   )
 }
 
 export async function getStaticPaths() {
-  // Call an external API endpoint to get posts
   const stories = await require('../stories.json');
-
-  // Get the paths we want to pre-render based on posts
   const paths = stories.map((story) => ({
     params: { id: story.path },
-  }))
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
+  }));
+	
   return { paths, fallback: false }
 }
 
-// This also gets called at build time
 export async function getStaticProps({ params }) {
-  // params contains the post `id`.
-  // If the route is like /posts/1, then params.id is 1
   const stories = await require('../stories.json');
 	const story = stories.filter((s) => {
 		return s.path === params.id;
 	});
 
-  // Pass post data to the page via props
   return { props: { story } }
 }

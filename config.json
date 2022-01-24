@@ -1,0 +1,39 @@
+{
+    "sections": [{
+            "route": "section/conspiracies",
+            "title": "Conspiracies"
+        },
+        {
+            "route": "section/unsolved-murders",
+            "title": "Unsolved Murders"
+        },
+        {
+            "route": "section/assassinations",
+            "title": "Assassinations"
+        },
+        {
+            "route": "section/paranormal",
+            "title": "Paranormal"
+        },
+        {
+            "route": "section/unexplained",
+            "title": "Unexplained"
+        },
+        {
+            "route": "section/aliens",
+            "title": "Aliens"
+        },
+        {
+            "route": "section/cryptozoology",
+            "title": "Cryptozoology"
+        },
+        {
+            "route": "section/ancient-mysteries",
+            "title": "Ancient Mysteries"
+        },
+        {
+            "route": "section/weird",
+            "title": "Weird"
+        }
+    ]
+}

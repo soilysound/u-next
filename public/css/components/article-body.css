@@ -1,0 +1,12 @@
+.article-body>.media:first-of-type {
+    flex-shrink: 0;
+    flex-basis: min(var(--site-width) - (var(--site-gutter) * 2), 100vw);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.article-body>p:first-of-type {
+    font-weight: bold;
+    font-size: 1.08em;
+}
