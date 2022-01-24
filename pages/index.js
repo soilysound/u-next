@@ -1,14 +1,8 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Tile from '../components/tile';
-import { useEffect } from 'react';
+import ArticleListLayout from 'layouts/article-list-layout';
 
 export default function Home({ stories }) {
-
-	useEffect(() => {
-		document.body.className = "page-canvas-shade";
-	});
-
 	const storylist = stories.map((story, index) => (
 		<Tile story={story} key={index} />
 	));
@@ -18,11 +12,20 @@ export default function Home({ stories }) {
 			<Head>
 				<title>Unredacted</title>
 			</Head>
+
 			<div className="flex-grid" style={{ "--basis": "250px" }}>
 				{storylist}
 			</div>
 		</>
 	)
+}
+
+Home.layout = (page) => {
+  return (
+    <ArticleListLayout>
+      {page}
+    </ArticleListLayout>
+  )
 }
 
 export async function getStaticProps() {
