@@ -1,3 +1,4 @@
+import ArticleListLayout from 'layouts/article-list-layout';
 import Head from 'next/head';
 import Tile from '../../components/tile';
 
