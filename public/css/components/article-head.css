@@ -11,3 +11,22 @@
     margin: 0 auto;
     color: var(--text-color-secondary)
 }
+
+.article-byline {
+    --grow: auto;
+    --gap: 10px;
+    margin: 0 auto;
+    color: var(--text-color-tertiary);
+    font-size: var(--supporting-text);
+    padding: 2% 0 1%;
+    align-items: center;
+}
+
+.article-byline-icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: var(--component-shade);
+    border-radius: 50%;
+    padding: 1%;
+}

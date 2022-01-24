@@ -3,6 +3,7 @@
     --text-color: var(--shade-800);
     --text-color-light: var(--shade-100);
     --text-color-secondary: var(--shade-500);
+    --text-color-tertiary: var(--shade-300);
     --page-canvas: var(--shade-100);
     --page-canvas-shade: var(--shade-200);
     --component-canvas: var(--shade-100);

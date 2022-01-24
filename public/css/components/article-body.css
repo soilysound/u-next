@@ -10,3 +10,21 @@
     font-weight: bold;
     font-size: 1.08em;
 }
+
+.article-body>h2 {
+    font-size: var(--display-500);
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.article-body>h3 {
+    font-size: var(--display-300);
+    padding-top: 0.5em;
+    text-align: center;
+    color: var(--text-color-secondary);
+}
+
+.article-body>h2+h3 {
+    padding-top: 0;
+    margin-top: -0.4em;
+}
