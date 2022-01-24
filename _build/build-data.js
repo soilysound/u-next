@@ -106,7 +106,20 @@ fs.readdirSync(FOLDER_PATH).filter(path => path.match(/^[a-z](.*).txt/)).forEach
     stories.push(data);
 });
 
-fs.writeFileSync(path.join(FOLDER_PATH, './stories.json'), JSON.stringify(stories));
+stories.sort((
+    a, b) => {
+    if (b.date < a.date) {
+        return -1;
+    };
+
+    if (b.date > a.date) {
+        return 1;
+    };
+
+    return 0;
+});
+
+fs.writeFileSync(path.join(ROOT, 'stories.json'), JSON.stringify(stories));
 
 function renderimage(folder, src, caption) {
     let dims = { width: 1200, height: 800 };
@@ -115,7 +128,7 @@ function renderimage(folder, src, caption) {
     } catch (error) {};
 
 
-    return (`<figure class="media flex gap-s" data-role="gallery-item"><img width="${dims.width}" height="${dims.height}" src="https://d6jf304m27oxw.cloudfront.net/${path.join(folder, src)}" loading="lazy" decoding="async"><figcaption class="media-caption"><div class="wrap wrap-narrow wrap-padding">${caption}</div></figcaption></figure>`)
+    return (`<figure class="media" data-role="gallery-item"><img width="${dims.width}" height="${dims.height}" src="https://d6jf304m27oxw.cloudfront.net/${path.join(folder, src)}" loading="lazy" decoding="async"><figcaption class="media-caption"><div class="wrap">${caption}</div></figcaption></figure>`)
 }
 
 function splitheadline(headline) {

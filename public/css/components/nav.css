@@ -3,8 +3,8 @@
     color: var(--text-color-invert);
     padding: var(--gap-m);
     position: relative;
-    border: var(--border-color-dark-mode);
     overflow: hidden;
+    border: 3px solid var(--border-color-dark-mode);
 }
 
 /* .js .nav-body {
@@ -24,7 +24,7 @@
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
-    border: var(--border-color-dark-mode);
+    border: 3px solid var(--border-color-dark-mode);
 }
 
 /* .nav-body[aria-hidden="false"] {

@@ -12,8 +12,7 @@ export default function Home({ stories }) {
 			<Head>
 				<title>Unredacted</title>
 			</Head>
-
-			<div className="flex-grid" style={{ "--basis": "250px" }}>
+			<div className="grid" style={{ "--basis": "240px", "--gap": "var(--gap-300)" }}>
 				{storylist}
 			</div>
 		</>
@@ -21,11 +20,11 @@ export default function Home({ stories }) {
 }
 
 Home.layout = (page) => {
-  return (
-    <ArticleListLayout>
-      {page}
-    </ArticleListLayout>
-  )
+	return (
+		<ArticleListLayout>
+			{page}
+		</ArticleListLayout>
+	)
 }
 
 export async function getStaticProps() {
@@ -37,7 +36,7 @@ export async function getStaticProps() {
 			headline: s.headline,
 			subheadline: s.subheadline
 		}
-	})
+	});
 
 	return { props: { stories: stories.slice(0, 24) } }
 }
