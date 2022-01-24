@@ -17,7 +17,7 @@
     align-self: flex-start;
     width: var(--size);
     height: var(--size);
-    background: var(--brand-secondary);
+    background: url('../../img/logos/u.svg') var(--brand-secondary);
     border: 0;
     border-radius: 50%;
     cursor: pointer;

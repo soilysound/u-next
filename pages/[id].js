@@ -1,16 +1,21 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export default function Article(props) {
 	const story = props.story[0];
+	useEffect( () => { 
+		document.body.className = "page-article"; 
+	});
+
   return (
     <>
       <Head>
-        <title>{story.title}</title>
+        <title>{story.title} - The Unredacted</title>
       </Head>
-			<div className="wrap" style={{"--wrap-gap": "var(--gap-400)", "--wrap-width": "770px"}} >
-				<div className="wrap article-head" style={{"--wrap-gap": "var(--gap-200)"}}>
+			<div className="wrap" style={{"--wrap-gap": "var(--gap-400)", "--wrap-width": "var(--site-width-m)"}} >
+				<div className="wrap flex-grid article-head" style={{"--wrap-gap": "var(--gap-200)"}}>
 					<h1 className="wrap" style={{"--wrap-gap": "6px"}}>
 						<div className="article-head-title display-200">{story.headline}</div>
 						<div className="display-900" dangerouslySetInnerHTML={{__html: story.subheadline}} />

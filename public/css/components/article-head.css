@@ -1,8 +1,13 @@
+.article-head[class] {
+    text-align: center;
+}
+
 .article-head-title {
     color: var(--brand-primary)
 }
 
 .article-head-snippet {
     max-width: 600px;
+    margin: 0 auto;
     color: var(--text-color-secondary)
 }

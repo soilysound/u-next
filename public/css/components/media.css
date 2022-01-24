@@ -1,0 +1,15 @@
+.media {
+    padding: 1em 0;
+}
+
+.media-caption {
+    font-size: var(--supporting-text);
+    color: var(--text-color-secondary);
+    padding: 1em 0 0;
+}
+
+.media-caption>.wrap {
+    --wrap-width: var(--site-width-m);
+    padding: 0 var(--site-gutter);
+    justify-content: center;
+}

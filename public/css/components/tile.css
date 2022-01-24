@@ -1,0 +1,56 @@
+.tile {
+    --direction: column;
+    --font-size: var(--display-200);
+    --image-width: 100%;
+    --padding: var(--component-padding);
+    background: var(--component-canvas);
+    box-shadow: var(--shadow-glow);
+    font-size: var(--font-size);
+    position: relative;
+    line-height: 1;
+}
+
+.tile img {
+    width: var(--image-width);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 50% 0;
+    background: var(--brand-secondary);
+}
+
+.tile figcaption {
+    flex: 1;
+}
+
+.tile-link:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.tile-link {
+    display: block;
+    color: var(--text-color);
+    padding: 10%;
+    min-height: 2em;
+}
+
+.tile-link>strong {
+    white-space: nowrap;
+    display: block;
+    padding-bottom: 0.35em;
+    color: var(--brand-primary);
+    font-size: 16px;
+}
+
+.tile a:hover strong {
+    color: var(--shade-200);
+    text-decoration-line: underline;
+    text-decoration-color: currentColor;
+}
+
+.tile-link:hover,
+.tile:hover {
+    background: var(--shade-900);
+    color: white;
+}
