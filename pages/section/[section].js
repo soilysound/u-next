@@ -1,13 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Tile from '../../components/tile';
-import { useEffect } from 'react';
 
 export default function Section({ section }) {
-	useEffect(() => {
-		document.body.className = "page-canvas-shade";
-	});
-
 	const storylist = section[1].map((story, index) => (
 		<Tile story={story} key={index} />
 	));
@@ -23,6 +17,14 @@ export default function Section({ section }) {
 			</div>
 		</>
 	)
+}
+
+Section.layout = (page) => {
+  return (
+    <ArticleListLayout>
+      {page}
+    </ArticleListLayout>
+  )
 }
 
 export async function getStaticPaths() {
