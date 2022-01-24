@@ -10,14 +10,14 @@ const WrapperLayout = ({ children, background = 'light' }) => {
   console.log(backgrounds[background])
 
   return (
-    <div className={backgrounds[background]}>
-      <div className="wrap wrap-site-width wrap-gutter">
+    <div className={`${backgrounds[background]} flex-grid wrap-gutter`}>
+      <div className="wrap wrap-site-width">
         <Header/>
       </div>
 
       {children}
 
-      <div className="wrap wrap-site-width wrap-gutter">
+      <div className="wrap wrap-site-width">
         <Footer/>
       </div>
     </div>

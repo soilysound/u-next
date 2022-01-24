@@ -5,7 +5,7 @@ const ArticleLayout = ({ children }) => {
     <>
       <Progress/>
       
-      <div className="wrap wrap-site-width wrap-gutter">
+      <div className="wrap wrap-site-width">
         {children}
       </div>
     </>
