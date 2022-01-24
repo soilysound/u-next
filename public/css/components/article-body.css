@@ -6,6 +6,18 @@
     transform: translateX(-50%);
 }
 
+.article-body>.media:first-of-type .wrap {
+    padding: 0 var(--site-gutter);
+}
+
+.article-body a {
+    text-decoration-line: underline;
+}
+
+.article-body a:hover {
+    text-decoration-line: none;
+}
+
 .article-body>p:first-of-type {
     font-weight: bold;
     font-size: 1.08em;

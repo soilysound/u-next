@@ -1,5 +1,5 @@
 .media {
-    padding: 1em 0;
+    padding: 2% 0;
 }
 
 .media-caption {
@@ -10,6 +10,5 @@
 
 .media-caption>.wrap {
     --wrap-width: var(--site-width-m);
-    padding: 0 var(--site-gutter);
     justify-content: center;
 }

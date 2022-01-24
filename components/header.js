@@ -1,19 +1,22 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 const config = require('../config.json');
 
 export default function Header() {
+
 
 	const sections = config.sections.map((section, index) => (
 		<li key={index}><Link href={section.route}><a>{section.title}</a></Link></li>
 	));
 
-	const [navState, navHidden] = useState(true);
+	const [navState, setNavStateHidden] = useState(true);
+	const { events } = useRouter();
 
 	return (
 		<header className="header" role="banner">
 			<nav className="wrap" style={{ "--wrap-gap": "var(--gap-200)" }}>
-				<button className="nav-button" aria-hidden="true" aria-controls="nav" aria-expanded="false" onClick={() => navHidden(!navState)}>
+				<button className="nav-button" aria-hidden="true" aria-controls="nav" aria-expanded="false" onClick={() => setNavStateHidden(!navState)}>
 					<span className="sr-only">Navigation</span>
 				</button>
 
@@ -22,7 +25,7 @@ export default function Header() {
 						<li><Link href="/"><a>Home</a></Link></li>
 						{sections}
 					</ul>
-					<button aria-controls="nav" aria-expanded="false" onClick={() => navHidden(true)}><span className="sr-only">Close navigation</span></button>
+					<button className="nav-close" aria-controls="nav" aria-expanded="false" onClick={() => setNavStateHidden(true)}><span className="sr-only">Close navigation</span></button>
 				</div>
 			</nav>
 		</header>

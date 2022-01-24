@@ -1,13 +1,13 @@
 .tile {
     --direction: column;
-    --font-size: var(--display-200);
+    --font-size: var(--display-400);
     --image-width: 100%;
     --padding: var(--component-padding);
     background: var(--component-canvas);
     box-shadow: var(--shadow-glow);
-    font-size: var(--font-size);
     position: relative;
     line-height: 1;
+    container: inline-size;
 }
 
 .tile img {
@@ -31,8 +31,9 @@
 .tile-link {
     display: block;
     color: var(--text-color);
-    padding: 10%;
-    min-height: 2em;
+    padding: 1.5rem;
+    font-size: var(--font-size);
+    font-size: 11qi;
 }
 
 .tile-link>strong {

@@ -24,6 +24,7 @@
         color-scheme: dark;
         --text-color: var(--shade-200);
         --text-color-secondary: var(--shade-400);
+        --text-color-tertiary: var(--shade-500);
         --page-canvas: var(--shade-900);
         --page-canvas-shade: var(--shade-800);
         --component-canvas: var(--shade-900);
@@ -31,6 +32,5 @@
         --component-shade-dark: var(--shade-800);
         --border-color: var(--shade-500);
         --border-color-strong: var(--shade-200);
-        --brand-secondary: var(--shade-800);
     }
 }

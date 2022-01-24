@@ -8,7 +8,7 @@
     --font-scale-600: clamp(2.5rem, 2.5rem + (48 - 40) * ((100vw - 400px) / (1000 - 400)), 3rem);
     --font-scale-700: clamp(3rem, 3rem + (56 - 48) * ((100vw - 400px) / (1000 - 400)), 3.5rem);
     --font-scale-800: clamp(3.5rem, 3.5rem + (64 - 56) * ((100vw - 400px) / (1000 - 400)), 4rem);
-    --font-scale-900: clamp(3.5rem, 3.5rem + (90 - 56) * ((100vw - 400px) / (1000 - 400)), 5.5rem);
+    --font-scale-900: clamp(3.5rem, 3.5rem + (96 - 56) * ((100vw - 400px) / (1000 - 400)), 6rem);
     /* fixed */
     --base-font-size: 1rem;
     --font-fixed-xs: calc(1rem - 2px);

@@ -1,8 +1,13 @@
+@media (prefers-color-scheme: dark) {
+    .page-canvas {
+        --brand-secondary: var(--shade-800);
+    }
+}
+
 .nav-body {
-    background: var(--component-shade-dark);
+    background: var(--brand-secondary);
     color: var(--text-color-invert);
     padding: var(--gap-m);
-    box-shadow: var(--shadow-drop);
     position: relative;
 }
 
@@ -18,7 +23,7 @@
     align-self: flex-start;
     width: var(--size);
     height: var(--size);
-    background: url('../../img/logos/u.svg') var(--brand-secondary);
+    background: url('../../img/logos/u.svg') var(--brand-secondary) no-repeat center;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -52,8 +57,13 @@
     padding: 0.3em 0.1em;
 }
 
-.nav-close[class] {
+.nav-close {
+    background: url('../../img/close.svg') no-repeat center;
+    cursor: pointer;
+    border: 0;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: var(--gap-m);
-    right: var(--gap-m);
+    top: var(--component-padding);
+    right: var(--component-padding);
 }
