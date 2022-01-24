@@ -18,7 +18,7 @@ export default function Home({ stories }) {
 			<Head>
 				<title>Unredacted</title>
 			</Head>
-			<div className="flex-grid" style={{ "--basis": "250px", "--gap": "var(--gap-300)" }}>
+			<div className="grid" style={{ "--basis": "240px", "--gap": "var(--gap-300)" }}>
 				{storylist}
 			</div>
 		</>
