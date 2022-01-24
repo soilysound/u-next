@@ -14,14 +14,14 @@ export default function Header() {
 	const { events } = useRouter();
 
 	return (
-		<header className="header" role="banner">
+		<header className="header" aria-label="site-header">
 			<nav className="wrap" style={{ "--wrap-gap": "var(--gap-200)" }}>
-				<button className="nav-button" aria-hidden="true" aria-controls="nav" aria-expanded="false" onClick={() => setNavStateHidden(!navState)}>
+				<button className="nav-button" aria-controls="nav" aria-expanded={!navState} onClick={() => setNavStateHidden(!navState)}>
 					<span className="sr-only">Navigation</span>
 				</button>
 
-				<div className="nav-body" data-role="nav-body" aria-hidden={navState}>
-					<ul id="nav" className="nav-links flex-grid" style={{ "--basis": "300px" }}>
+				<div className="nav-body" aria-hidden={navState}>
+					<ul id="nav" className="nav-links flex-grid" style={{ "--basis": "300px" }} aria-label="site-navigation">
 						<li><Link href="/"><a>Home</a></Link></li>
 						{sections}
 					</ul>
