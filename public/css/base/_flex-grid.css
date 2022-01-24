@@ -23,3 +23,11 @@
 .flex-grid>*:only-child {
     flex-basis: var(--basis);
 }
+
+.grid {
+    --basis: auto;
+    --gap: var(--component-gap);
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(var(--basis), 1fr));
+}

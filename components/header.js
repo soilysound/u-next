@@ -7,7 +7,7 @@ export default function Header() {
 
 
 	const sections = config.sections.map((section, index) => (
-		<li key={index}><Link href={section.route}><a>{section.title}</a></Link></li>
+		<li key={index}><Link href={`/section/${section.route}/`}><a>{section.title}</a></Link></li>
 	));
 
 	const [navState, setNavStateHidden] = useState(true);

@@ -1,39 +1,83 @@
 {
     "sections": [{
-            "route": "section/conspiracies",
-            "title": "Conspiracies"
+            "title": "Conspiracies",
+            "pagetitle": "Conspiracies",
+            "description": "What is the truth behind the world's most famous and controversial conspiracy theories? Was Princess Diana murdered, was Lee Harvey Oswald the assassin of President Kennedy and did Hitler live on after WW2?",
+            "route": "conspiracies",
+            "keywords": [
+                "conspiracy"
+            ]
         },
         {
-            "route": "section/unsolved-murders",
-            "title": "Unsolved Murders"
+            "title": "Unsolved Murders",
+            "pagetitle": "Unsolved Murders",
+            "description": "What are the most mysterious unsolved murders in history? How did the spy in the bag die? Did the British government assasinate Dr David Kelly and was OJ Simpson innocent all along?",
+            "route": "unsolved-murders",
+            "keywords": [
+                "murder",
+                "death",
+                "killer"
+            ]
         },
         {
-            "route": "section/assassinations",
-            "title": "Assassinations"
+            "title": "Assassinations",
+            "description": "Were John and Robert Kennedy both assasinated by their own government? What is the truth behind the strange death of Pope John Paul I and was Princess Diana really murdered?",
+            "route": "assassinations",
+            "keywords": [
+                "assassination"
+            ]
         },
         {
-            "route": "section/paranormal",
-            "title": "Paranormal"
+            "title": "Paranormal",
+            "description": "The strangest hauntings and supernatural cases in history. Were the Hodgson family tormented by the infamous Enfield Poltergeist? Do the mysterious crystal skulls have mystical properties and did a vampire stalk the tombstones of Highgate Cemetery?",
+            "route": "paranormal",
+            "keywords": [
+                "paranormal"
+            ]
         },
         {
-            "route": "section/unexplained",
-            "title": "Unexplained"
+            "title": "Unexplained",
+            "description": "What are the world's most perplexing mysteries? Did the Americans find the legendary Yamashita's gold after WW2? Was there a curse on Tutankhamuns' tomb and how did 9 Russian hikers die at Dyatlov pass?",
+            "route": "the-unexplained",
+            "keywords": [
+                "unexplained"
+            ]
         },
         {
-            "route": "section/aliens",
-            "title": "Aliens"
+            "title": "Cryptozoology",
+            "description": "Do strange creatures unknown to science really exist? What is the truth behind Bigfoot, did the sinister Spring Heeled Jack torment Londoners in Victorian England and was Highgate Cemetery haunted by a vampire?",
+            "route": "cryptozoology",
+            "keywords": [
+                "cryptozoology",
+                "cryptid",
+                "monster"
+            ]
         },
         {
-            "route": "section/cryptozoology",
-            "title": "Cryptozoology"
+            "title": "Ancient Mysteries",
+            "description": "Do the great pyramids of Giza hide an amazing ancient secret? Are the mysterious crystal skulls artifacts from Atlantis? And does the Piri Reis map prove there was an advanced lost civilization lot to history?",
+            "route": "ancient-mysteries",
+            "keywords": [
+                "ancient"
+            ]
         },
         {
-            "route": "section/ancient-mysteries",
-            "title": "Ancient Mysteries"
+            "title": "Weird",
+            "description": "The strange, the weird and the inexplicable. What is the truth behind the mysterious Solway Firth Spaceman? Did a vampire haunt Highgate cemetery? And did Nikola Tesla cause the Tunguska blast of 1908?",
+            "route": "weird",
+            "keywords": [
+                "weird"
+            ]
         },
         {
-            "route": "section/weird",
-            "title": "Weird"
+            "title": "Aliens",
+            "description": "Have we been visited by beings from beyond the stars? Does a 13,000 year old alien satellite orbit the Earth? What is the truth behind Rendlesham Forest and did aliens kill nine Russian hikers at Dyatlov pass?",
+            "route": "aliens",
+            "keywords": [
+                "aliens",
+                "ufo",
+                "flying saucer"
+            ]
         }
     ]
 }
