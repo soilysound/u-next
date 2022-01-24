@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Tile from './components/tile';
+import Tile from '../components/tile';
 import { useEffect } from 'react';
 
 export default function Home({ stories }) {
@@ -8,8 +8,8 @@ export default function Home({ stories }) {
 		document.body.className = "page-article-shade";
 	});
 
-	const storylist = stories.map(story => (
-		<Tile story={story} key={story.title} />
+	const storylist = stories.map((story, index) => (
+		<Tile story={story} key={index} />
 	));
 
 	return (

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-const config = require('../../config.json');
+const config = require('../config.json');
 
 export default function Header() {
 
