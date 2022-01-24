@@ -36,6 +36,7 @@ Article.layout = (page) => {
     </ArticleLayout>
   )
 }
+Article.background = 'dark'
 
 export async function getStaticPaths() {
 	const stories = await require('../stories.json');

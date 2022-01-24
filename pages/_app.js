@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import DefaultLayout from 'layouts/default-layout';
 import 'public/css/styles.css';
+import WrapperLayout from 'layouts/wrapper-layout';
 
 function MyApp({ Component, pageProps }) {
   // I swapped this to useEffect as was getting a warning in console "Warning: useLayoutEffect does nothing on the server"
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
 
   // Checks to see if a layout has been set on Component (the page) and returns a default layout if not
   const layout = Component.layout ?? ((page) => (<DefaultLayout>{page}</DefaultLayout>))
+  const background = Component.background
 
   return (
     <>
@@ -19,9 +21,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {layout(
-        <Component {...pageProps} />
-      )}
+      <WrapperLayout background={background}>
+        {layout(
+          <Component {...pageProps} />
+        )}
+      </WrapperLayout>
     </>
   )
 }

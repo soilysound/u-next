@@ -26,6 +26,7 @@ Home.layout = (page) => {
 		</ArticleListLayout>
 	)
 }
+Home.background = 'light'
 
 export async function getStaticProps() {
 	const all = require('../stories.json');

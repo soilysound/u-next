@@ -31,8 +31,6 @@ export default function Header() {
 			return
 		}
 
-		console.log(navRef.current.offsetHeight)
-
     api.start({
       height: `${!navState ? navRef.current.offsetHeight : '0'}px`
     })

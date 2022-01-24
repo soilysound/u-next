@@ -27,6 +27,7 @@ Section.layout = (page) => {
     </ArticleListLayout>
   )
 }
+Section.background = 'light'
 
 export async function getStaticPaths() {
 	const sections = await require('../../config.json');
