@@ -3,25 +3,25 @@ import Link from 'next/link';
 import Tile from './components/tile';
 import { useEffect } from 'react';
 
-export default function Home({stories}) {
-	useEffect( () => { 
-		document.body.className = "page-article-shade"; 
+export default function Home({ stories }) {
+	useEffect(() => {
+		document.body.className = "page-article-shade";
 	});
 
 	const storylist = stories.map(story => (
-    <Tile story={story} key={story.title} />
-  ));
+		<Tile story={story} key={story.title} />
+	));
 
-  return (
-    <>	
+	return (
+		<>
 			<Head>
 				<title>Unredacted</title>
 			</Head>
-			<div className="flex-grid" style={{"--basis": "250px"}}>
+			<div className="flex-grid" style={{ "--basis": "250px" }}>
 				{storylist}
-			</div>					
-    </>
-  )
+			</div>
+		</>
+	)
 }
 
 export async function getStaticProps() {
@@ -32,7 +32,7 @@ export async function getStaticProps() {
 			title: s.title,
 			headline: s.headline,
 			subheadline: s.subheadline
-			}
+		}
 	})
 
 	return { props: { stories } }
