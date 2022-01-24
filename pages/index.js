@@ -34,7 +34,7 @@ export async function getStaticProps() {
 			headline: s.headline,
 			subheadline: s.subheadline
 		}
-	})
+	});
 
 	return { props: { stories: stories.slice(0, 24) } }
 }
