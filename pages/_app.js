@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import '../public/css/styles.css';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		document.documentElement.classList.add("js");
 	});
 

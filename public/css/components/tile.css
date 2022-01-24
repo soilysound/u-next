@@ -37,7 +37,6 @@
 }
 
 .tile-link>strong {
-    white-space: nowrap;
     display: block;
     padding-bottom: 0.35em;
     color: var(--brand-primary);
