@@ -1,14 +1,9 @@
-@media (prefers-color-scheme: dark) {
-    .page-canvas {
-        --brand-secondary: var(--shade-800);
-    }
-}
-
 .nav-body {
     background: var(--brand-secondary);
     color: var(--text-color-invert);
     padding: var(--gap-m);
     position: relative;
+    border: var(--border-color-dark-mode);
 }
 
 .js .nav-body {
@@ -28,6 +23,7 @@
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
+    border: var(--border-color-dark-mode);
 }
 
 .nav-body[aria-hidden="false"] {
