@@ -4,11 +4,12 @@
     padding: var(--gap-m);
     position: relative;
     border: var(--border-color-dark-mode);
+    overflow: hidden;
 }
 
-.js .nav-body {
+/* .js .nav-body {
     display: none;
-}
+} */
 
 .nav-button {
     contain: content;
@@ -26,9 +27,9 @@
     border: var(--border-color-dark-mode);
 }
 
-.nav-body[aria-hidden="false"] {
+/* .nav-body[aria-hidden="false"] {
     display: block;
-}
+} */
 
 .nav-button>svg {
     width: 100%;
