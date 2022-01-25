@@ -10,6 +10,10 @@
     accent-color: var(--brand-primary);
 }
 
+.page-canvas-shade+.progress {
+    display: none;
+}
+
 .progress::-moz-progress-bar {
     background: var(--component-shade);
 }

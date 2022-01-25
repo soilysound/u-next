@@ -17,7 +17,7 @@ export default function Nav() {
 		events.on('routeChangeComplete', closeNav)
 
 		return () => {
-			events.off('routeChangeComplete', closeNav)
+      events.off('routeChangeComplete', closeNav)
 		};
 	}, [events, closeNav]);
 
