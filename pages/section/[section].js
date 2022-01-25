@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Tile from '../../components/tile';
+import relatedStories from '../../utils/relates-stories';
 
 export default function Section({ section }) {
 	const storylist = section[1].map((story, index) => (
@@ -37,22 +38,7 @@ export async function getStaticProps({ params }) {
 	});
 
 	const all = require('../../stories.json');
-
-	const stories = all.filter((s) => {
-		let match = 0;
-		s.tags.forEach((t) => {
-			if (section[0].keywords.includes(t)) { match++ }
-		});
-		return match > 0;
-	}).map((s) => {
-		return {
-			path: s.path,
-			title: s.title,
-			headline: s.headline,
-			subheadline: s.subheadline,
-			tags: s.tags
-		}
-	});
+	const stories = relatedStories(all, section[0].keywords);
 
 	section.push(stories);
 
