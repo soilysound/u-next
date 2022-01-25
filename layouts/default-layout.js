@@ -1,8 +1,12 @@
+import Page from "components/page";
+
 const DefaultLayout = ({ children }) => {
   return (
-    <main className="wrap wrap-site-width">
-      {children}
-    </main>
+    <Page>
+      <main className="wrap wrap-site-width">
+        {children}
+      </main>
+    </Page>
   )
 }
 

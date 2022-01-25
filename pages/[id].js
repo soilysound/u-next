@@ -27,7 +27,6 @@ export default function Article(props) {
 	)
 }
 
-// Article.layout is defined a function that takes a page arg and returns a layout with that page as content
 Article.layout = (page) => {
   return (
     <ArticleLayout>

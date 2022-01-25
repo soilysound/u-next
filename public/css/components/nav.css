@@ -12,7 +12,7 @@
 }
 
 .nav-body {
-    transform: translateY(var(--nav-height));
+    will-change: transform;
     position: absolute;
     bottom: 100%;
     overflow: hidden;
@@ -52,7 +52,6 @@
     font-weight: 600;
     background: var(--brand-secondary);
     color: var(--text-color-invert);
-    border: 3px solid var(--border-color-dark-mode);
 }
 
 .nav-links a {

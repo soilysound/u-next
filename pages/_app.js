@@ -5,8 +5,6 @@ import 'public/css/styles.css';
 import WrapperLayout from 'layouts/wrapper-layout';
 
 function MyApp({ Component, pageProps }) {
-
-  // Checks to see if a layout has been set on Component (the page) and returns a default layout if not
   const layout = Component.layout ?? ((page) => (<DefaultLayout>{page}</DefaultLayout>))
 	const canvas = Component.canvas;
 
