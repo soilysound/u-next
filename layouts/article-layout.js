@@ -1,4 +1,4 @@
-import Progress from 'components/progress'
+import Progress from 'components/progress';
 
 const ArticleLayout = ({ children }) => {
   return (
@@ -11,4 +11,4 @@ const ArticleLayout = ({ children }) => {
   )
 }
 
-export default ArticleLayout
+export default ArticleLayout;

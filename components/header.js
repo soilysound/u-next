@@ -13,7 +13,7 @@ export default function Header() {
 		events.on('routeChangeStart', () => setNavStateHidden(true))
 
 		return () => {
-			events.off('routeChangeComplete', () => setNavStateHidden(true))
+			events.off('routeChangeStart', () => setNavStateHidden(true))
 		};
 	}, [events]);
 
