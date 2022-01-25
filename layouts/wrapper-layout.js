@@ -1,6 +1,7 @@
 import Footer from 'components/footer'
 import Header from 'components/header'
 import { NavProvider } from 'components/nav/nav-provider'
+import Page from 'components/page'
 
 const WrapperLayout = ({ children, canvas = 'page-canvas' }) => {
   return (
@@ -9,8 +10,9 @@ const WrapperLayout = ({ children, canvas = 'page-canvas' }) => {
         <div className="wrap wrap-site-width">
           <Header/>
         </div>
-
-        {children}
+        <Page>
+          {children}
+        </Page>
       </NavProvider>
 
       <div className="wrap wrap-site-width">
