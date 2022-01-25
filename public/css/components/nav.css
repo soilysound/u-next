@@ -51,7 +51,7 @@
     row-gap: 0;
     font-weight: 600;
     background: var(--brand-secondary);
-    color: var(--text-color-invert);
+    border: 3px solid var(--border-color-dark-mode);
 }
 
 .nav-links a {
