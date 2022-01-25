@@ -1,5 +1,7 @@
 import Footer from 'components/footer'
 import Header from 'components/header'
+import Page from 'components/page'
+import { NavProvider } from 'components/nav/nav-provider'
 
 const backgrounds = {
   light: 'page-canvas-shade',
@@ -11,11 +13,15 @@ const WrapperLayout = ({ children, background = 'light' }) => {
 
   return (
     <div className={`${backgrounds[background]} flex-grid wrap-gutter`}>
-      <div className="wrap wrap-site-width">
-        <Header/>
-      </div>
+      <NavProvider>
+        <div className="wrap wrap-site-width">
+          <Header/>
+        </div>
 
-      {children}
+        <Page>
+          {children}
+        </Page>
+      </NavProvider>
 
       <div className="wrap wrap-site-width">
         <Footer/>
