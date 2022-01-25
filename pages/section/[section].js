@@ -1,4 +1,3 @@
-import ArticleListLayout from 'layouts/article-list-layout';
 import Head from 'next/head';
 import Tile from '../../components/tile';
 
@@ -20,13 +19,7 @@ export default function Section({ section }) {
 	)
 }
 
-Section.layout = (page) => {
-  return (
-    <ArticleListLayout>
-      {page}
-    </ArticleListLayout>
-  )
-}
+Section.background = 'light'
 
 export async function getStaticPaths() {
 	const sections = await require('../../config.json');

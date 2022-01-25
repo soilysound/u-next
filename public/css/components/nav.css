@@ -3,12 +3,13 @@
     color: var(--text-color-invert);
     padding: var(--gap-m);
     position: relative;
+    overflow: hidden;
     border: 3px solid var(--border-color-dark-mode);
 }
 
-.js .nav-body {
+/* .js .nav-body {
     display: none;
-}
+} */
 
 .nav-button {
     contain: content;
@@ -26,9 +27,9 @@
     border: 3px solid var(--border-color-dark-mode);
 }
 
-.nav-body[aria-hidden="false"] {
+/* .nav-body[aria-hidden="false"] {
     display: block;
-}
+} */
 
 .nav-button>svg {
     width: 100%;
