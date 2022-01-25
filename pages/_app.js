@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
 				<link rel="icon" href="/favicon.ico" />
+				<noscript dangerouslySetInnerHTML={{__html: `<style>.nav-body[class]{ max-height: 100%}</style>`}}></noscript>
       </Head>
 
 			<WrapperLayout canvas={canvas}>
