@@ -8,12 +8,13 @@
     padding: var(--gap-m);
     position: absolute;
     overflow: hidden;
+    transition: max-height 0.66s linear;
     border: 3px solid var(--border-color-dark-mode);
 }
 
-/* .js .nav-body {
-    display: none;
-} */
+.nav-body[aria-hidden="false"] {
+    max-height: 500px;
+}
 
 .nav-button {
     contain: content;
@@ -31,10 +32,6 @@
     border: 3px solid var(--border-color-dark-mode);
 }
 
-/* .nav-body[aria-hidden="false"] {
-    display: block;
-} */
-
 .nav-button>svg {
     width: 100%;
     height: 100%;
@@ -50,6 +47,8 @@
     padding: var(--component-padding);
     row-gap: 0;
     font-weight: 600;
+    background: var(--brand-secondary);
+    color: var(--text-color-invert);
 }
 
 .nav-links a {

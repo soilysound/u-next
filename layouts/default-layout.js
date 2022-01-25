@@ -1,9 +1,13 @@
+import Page from "components/page";
+
 const DefaultLayout = ({ children }) => {
   return (
-    <div className="wrap wrap-site-width">
-      {children}
-    </div>
+    <Page>
+      <main className="wrap wrap-site-width">
+        {children}
+      </main>
+    </Page>
   )
 }
 
-export default DefaultLayout
+export default DefaultLayout;

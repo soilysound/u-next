@@ -10,7 +10,6 @@ export default function Article(props) {
 				<title>{story.title} - The Unredacted</title>
 			</Head>
 
-			<div className="wrap" style={{ "--wrap-gap": "var(--gap-400)", "--wrap-width": "var(--site-width-m)" }} >
 				<div className="wrap article-head" style={{ "--wrap-gap": "var(--gap-200)" }}>
 					<h1 className="wrap" style={{ "--wrap-gap": "6px" }}>
 						<div className="article-head-title display-200">{story.headline}</div>
@@ -23,12 +22,11 @@ export default function Article(props) {
 
 				</div>
 				<div className="wrap article-body article-text" style={{ "--wrap-gap": "var(--gap-400)" }} dangerouslySetInnerHTML={{ __html: story.body }} />
-			</div>
+			
 		</>
 	)
 }
 
-// Article.layout is defined a function that takes a page arg and returns a layout with that page as content
 Article.layout = (page) => {
   return (
     <ArticleLayout>
@@ -36,7 +34,8 @@ Article.layout = (page) => {
     </ArticleLayout>
   )
 }
-Article.background = 'dark'
+
+Article.canvas = 'page-canvas';
 
 export async function getStaticPaths() {
 	const stories = await require('../stories.json');

@@ -9,7 +9,7 @@ export default function Section({ section }) {
 	return (
 		<>
 			<Head>
-				<title>Unredacted</title>
+				<title>{section[0].title} - Unredacted</title>
 			</Head>
 			<h1 className="display-600 flex-grid" style={{ "--justify": "center" }}>{section[0].title}</h1>
 			<div className="grid" style={{ "--basis": "240px", "--gap": "var(--gap-300)" }}>
@@ -19,7 +19,7 @@ export default function Section({ section }) {
 	)
 }
 
-Section.background = 'light'
+Section.canvas = 'page-canvas-shade';
 
 export async function getStaticPaths() {
 	const sections = await require('../../config.json');
