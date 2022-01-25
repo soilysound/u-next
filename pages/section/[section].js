@@ -19,7 +19,7 @@ export default function Section({ section }) {
 	)
 }
 
-Section.background = 'light'
+Section.canvas = 'page-canvas-shade';
 
 export async function getStaticPaths() {
 	const sections = await require('../../config.json');

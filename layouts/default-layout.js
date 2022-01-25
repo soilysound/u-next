@@ -1,8 +1,8 @@
 const DefaultLayout = ({ children }) => {
   return (
-    <div className="wrap wrap-site-width">
+    <main className="wrap wrap-site-width">
       {children}
-    </div>
+    </main>
   )
 }
 

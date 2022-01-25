@@ -1,25 +1,15 @@
 import Footer from 'components/footer'
 import Header from 'components/header'
 
-const backgrounds = {
-  light: 'page-canvas-shade',
-  dark: 'page-canvas',
-}
-
-const WrapperLayout = ({ children, background = 'light' }) => {
-  console.log(backgrounds[background])
-
-  return (
-    <div className={`${backgrounds[background]} flex-grid wrap-gutter`}>
-      <div className="wrap wrap-site-width">
-        <Header/>
-      </div>
-
+const WrapperLayout = ({ children, canvas = 'page-canvas' }) => {
+	console.log(canvas);
+	return (
+		<div className={`${canvas} wrap wrap-gutter`}>
+      
+      <Header/>
       {children}
-
-      <div className="wrap wrap-site-width">
-        <Footer/>
-      </div>
+      <Footer/>
+    
     </div>
   )
 }

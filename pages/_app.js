@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 
   // Checks to see if a layout has been set on Component (the page) and returns a default layout if not
   const layout = Component.layout ?? ((page) => (<DefaultLayout>{page}</DefaultLayout>))
-  const background = Component.background
+	const canvas = Component.canvas;
 
   return (
     <>
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <WrapperLayout background={background}>
+			<WrapperLayout canvas={canvas}>
         {layout(
           <Component {...pageProps} />
         )}

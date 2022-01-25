@@ -24,6 +24,6 @@ export default function Progress() {
 	}, []);
 
   return (
-    <progress ref={progressRef} className="progress" min="0" max="1000"></progress>
+    <progress ref={progressRef} className="progress" min="0" max="1000" aria-hidden="true"></progress>
   )
 }

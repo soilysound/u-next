@@ -18,7 +18,7 @@ export default function Home({ stories }) {
 	)
 }
 
-Home.background = 'light'
+Home.canvas = 'page-canvas-shade';
 
 export async function getStaticProps() {
 	const all = require('../stories.json');
