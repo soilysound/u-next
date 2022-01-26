@@ -62,7 +62,7 @@ export async function getStaticProps({ params }) {
 		return s.path === params.id;
 	});
 	
-	story[0].related = relatedStories(stories, story[0].tags).slice(0, 6);
+	story[0].related = relatedStories(stories, story[0].tags).slice(1, 7);
 
 	return { props: { story } }
 }
