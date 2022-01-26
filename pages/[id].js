@@ -4,6 +4,7 @@ import relatedStories from '../utils/related-stories';
 import Tile from 'components/tile';
 import gallery from 'components/gallery';
 import { useEffect, useRef } from 'react';
+import { DiscussionEmbed } from 'disqus-react';
 
 export default function Article(props) {
 	const story = props.story[0];
@@ -14,8 +15,8 @@ export default function Article(props) {
 	
 	useEffect(() => {
 		gallery(galleryRef.current);
-	})
-	
+	}, []);
+	console.log(story);
 	return (
 		<>
 			<Head>
@@ -39,11 +40,18 @@ export default function Article(props) {
 				
 					<div className="grid wrap article-related-body" style={{ "--basis": "260px", "--wrap-width": "var(--site-width-m)"}}>{storylist}</div>
 			</div>
-			
+<h2 className="display-400 flex-grid wrap" style={{"--justify": "center"}}>Comments</h2>
+			<DiscussionEmbed shortname='unredacted' config={{
+					url: story.baseurl + '/' + story.path,
+					identifier: story.path,
+					language: 'en_GB'
+				}}>
+			</DiscussionEmbed>
+
 			<div className="gallery" aria-hidden="true" ref={galleryRef}>
-        <button className="button button--close gallery-close">close</button>
-        <div className="gallery-rail"></div>
-    </div>
+					<button className="button button--close gallery-close">close</button>
+					<div className="gallery-rail"></div>
+			</div>
 		</>
 	)
 }
