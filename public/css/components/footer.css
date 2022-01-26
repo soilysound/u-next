@@ -1,4 +1,22 @@
 .footer {
-    padding: 0 0 var(--component-padding) 0;
+    padding: 0 0 calc(var(--component-padding-loose) * 2) 0;
     font-weight: 500;
+}
+
+.footer-top {
+    position: fixed;
+    inset: auto var(--site-gutter) var(--site-gutter) auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url('../../img/up-arrow.svg') center / 50% no-repeat var(--black-op-25);
+    z-index: var(--layer-ui);
+    transition: opacity 0.66s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.footer-top[data-active="true"] {
+    opacity: 1;
+    visibility: visible;
 }

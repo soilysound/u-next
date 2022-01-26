@@ -45,7 +45,7 @@ fs.readdirSync(FOLDER_PATH).filter(path => path.match(/^[a-z](.*).txt/)).forEach
 
             }
 
-            if (line[0].match(/^-(.*)\.jpg|webp/)) {
+            if (line[0].match(/^-(.*)\.jpg|png|webp/)) {
                 var src = line[0].trim().replace(/^-/, '');
                 var caption = line[1].trim();
                 data.body.push(renderimage(storypath.replace(/\.txt/, ''), src, caption));

@@ -2,13 +2,19 @@ import ArticleLayout from 'layouts/article-layout';
 import Head from 'next/head';
 import relatedStories from '../utils/related-stories';
 import Tile from 'components/tile';
+import gallery from 'components/gallery';
+import { useEffect, useRef } from 'react';
 
 export default function Article(props) {
 	const story = props.story[0];
-	
+	const galleryRef = useRef(null);
 	const storylist = story.related.map((story, index) => (
 		<Tile story={story} key={index} styles={{"--image-width": "98px", "--font-size": "var(--display-300)"}}/>
 	));
+	
+	useEffect(() => {
+		gallery(galleryRef.current);
+	})
 	
 	return (
 		<>
@@ -28,11 +34,16 @@ export default function Article(props) {
 
 				</div>
 			<div className="wrap article-body article-text" style={{ "--wrap-gap": "var(--gap-400)" }} dangerouslySetInnerHTML={{ __html: story.body }} />
-			<div class="article-related component-padding page-canvas-shade wrap wrap-full-width" style={{"--component-padding-value": "var(--component-padding-loose)"}}>
-				<h2 class="display-400 flex-grid wrap" style={{"--justify": "center"}}>Related stories</h2>
+			<div className="article-related component-padding page-canvas-shade wrap wrap-full-width" style={{"--component-padding-value": "var(--component-padding-loose)"}}>
+				<h2 className="display-400 flex-grid wrap" style={{"--justify": "center"}}>Related stories</h2>
 				
-					<div class="grid wrap article-related-body" style={{ "--basis": "260px", "--wrap-width": "var(--site-width-m)"}}>{storylist}</div>
+					<div className="grid wrap article-related-body" style={{ "--basis": "260px", "--wrap-width": "var(--site-width-m)"}}>{storylist}</div>
 			</div>
+			
+			<div className="gallery" aria-hidden="true" ref={galleryRef}>
+        <button className="button button--close gallery-close">close</button>
+        <div className="gallery-rail"></div>
+    </div>
 		</>
 	)
 }
