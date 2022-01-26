@@ -1,6 +1,7 @@
 .footer {
     padding: 0 0 calc(var(--component-padding-loose) * 2) 0;
     font-weight: 500;
+    color: var(--text-color-secondary);
 }
 
 .footer-top {

@@ -16,7 +16,7 @@ export default function Article(props) {
 	useEffect(() => {
 		gallery(galleryRef.current);
 	}, []);
-	console.log(story);
+
 	return (
 		<>
 			<Head>
@@ -40,7 +40,7 @@ export default function Article(props) {
 				
 					<div className="grid wrap article-related-body" style={{ "--basis": "260px", "--wrap-width": "var(--site-width-m)"}}>{storylist}</div>
 			</div>
-<h2 className="display-400 flex-grid wrap" style={{"--justify": "center"}}>Comments</h2>
+			<h2 className="display-400 flex-grid wrap" style={{"--justify": "center"}}>Comments</h2>
 			<DiscussionEmbed shortname='unredacted' config={{
 					url: story.baseurl + '/' + story.path,
 					identifier: story.path,
