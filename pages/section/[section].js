@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Tile from '../../components/tile';
-import relatedStories from '../../utils/relates-stories';
+import relatedStories from '../../utils/related-stories';
 
 export default function Section({ section }) {
 	const storylist = section[1].map((story, index) => (

@@ -28,6 +28,11 @@
     --basis: auto;
     --gap: var(--component-gap);
     display: grid;
+    align-items: stretch;
     gap: var(--gap);
     grid-template-columns: repeat(auto-fit, minmax(var(--basis), 1fr));
+}
+
+.grid>* {
+    max-width: 100%;
 }

@@ -1,0 +1,4 @@
+.footer {
+    padding: 0 0 var(--component-padding) 0;
+    font-weight: 500;
+}

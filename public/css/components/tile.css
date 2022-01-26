@@ -12,6 +12,7 @@
 
 .tile img {
     width: var(--image-width);
+    flex-grow: 0;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: 50% 0;
@@ -41,6 +42,10 @@
     padding-bottom: 0.35em;
     color: var(--brand-primary);
     font-size: 16px;
+}
+
+.tile-link span {
+    display: block;
 }
 
 .tile a:hover strong {

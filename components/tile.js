@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-export default function Tile({ story }) {
+export default function Tile({ story, styles }) {
 	return (
-		<article className="tile">
+		<article className="tile" style={styles}>
 			<figure className="flex-grid" style={{ "--gap": "0px" }}>
 				<img width="400" height="400" aria-hidden="true" loading="lazy" src={`/img/stories/${story?.path}.webp`} />
 				<figcaption className="flex-grid" style={{ "--gap": "0px" }}>

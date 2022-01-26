@@ -18,6 +18,6 @@ export default function Page({ children }) {
         })
     }, [api, navRef, navOpenState]);
 
-    return ( <animated.div style = { pageShiftStyles } > { children } </animated.div>
+	return (<animated.div className="wrap" style = { pageShiftStyles } > { children } </animated.div>
     );
 }
