@@ -11,7 +11,7 @@ export default function(gallery) {
     var rail = gallery.querySelector('.gallery-rail');
     var launchers = document.querySelectorAll('.media img');
     var closers = gallery.querySelectorAll('.gallery-close');
-    var images = document.querySelectorAll('figure img');
+    var images = document.querySelectorAll('.article-body .media img');
 
     if (!gallery || !launchers) {
         return;

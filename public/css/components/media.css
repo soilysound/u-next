@@ -2,6 +2,10 @@
     padding: 2% 0;
 }
 
+.media img {
+    cursor: pointer;
+}
+
 .media-caption {
     font-size: var(--supporting-text);
     color: var(--text-color-secondary);

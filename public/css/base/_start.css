@@ -29,5 +29,9 @@ a {
 }
 
 *[id] {
-    scroll-padding-top: 1em;
+    scroll-margin-top: 1em;
+}
+
+iframe {
+    color-scheme: light dark;
 }

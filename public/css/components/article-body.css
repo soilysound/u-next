@@ -7,7 +7,7 @@
 }
 
 .article-body>.media:first-of-type .wrap {
-    padding: 0 var(--site-gutter);
+    display: none;
 }
 
 .article-body a {
@@ -42,5 +42,6 @@
 }
 
 .article-end {
+    font-family: serif;
     padding-bottom: var(--component-gap);
 }

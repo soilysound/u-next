@@ -128,7 +128,7 @@ function renderimage(folder, src, caption) {
     } catch (error) {};
 
 
-    return (`<figure class="media" data-role="gallery-item"><img width="${dims.width}" height="${dims.height}" src="https://d6jf304m27oxw.cloudfront.net/${path.join(folder, src)}" loading="lazy" decoding="async"><figcaption class="media-caption"><div class="wrap">${caption}</div></figcaption></figure>`)
+    return (`<figure class="media" data-role="gallery-item" aria-hidden="true"><img width="${dims.width}" height="${dims.height}" alt="${caption}" src="https://d6jf304m27oxw.cloudfront.net/${path.join(folder, src)}" loading="lazy" decoding="async"><figcaption class="media-caption"><div class="wrap">${caption}</div></figcaption></figure>`)
 }
 
 function splitheadline(headline) {
